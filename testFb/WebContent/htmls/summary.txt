@@ -1,0 +1,31 @@
+ <br/>  -> for new line
+ &nbsp;   -> for space
+ <!--  
+              Comments 
+  --> 
+  <h1> <h2> <h3> <h4> <h5> -> header tags that displays content in diff font
+  <hr/>  -> horizonal line
+  <ul> , <ol < <li> -> to show the ordered and unordered list
+  <b>, <i> , <strong> , <em>  --> font style
+  style attribute specifies --->font color , text alignment , font family
+  <p>    -> paragraphs 
+  <style>   -> tag in html specifies the style for the elements inside the body
+  <img> + src -> for displaying the image
+  <a href> ----------> for displaying the link(internal/external)
+  <table> ,<tr> ,<td> ----> to show the table info
+  for A button the url is specified using the form tag 
+  ex:
+  <form action="https://www.google.com" method="get">
+  <form>
+  
+  
+  <input type="submit">     ==> to show button
+  <input type="text" >      ===> to show text box
+  <input type = "password">  ===> to show password
+  <input type="radio">  ===> to show radio button
+  <input type="checkbox"> ===> to show checkbox
+  <input type="hidden> ===> data submitted to backend but not visible in the html response.
+  <select> with <option>       ===> to show the dropdown
+    <select name="citizen" multiple> with <option>   ===> to show the multi dropdown
+	<textarea>    ==> for para/comment/multi lines
+  <input type = "file">    ==> for file upload
