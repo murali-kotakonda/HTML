@@ -1,14 +1,34 @@
+<!--   -->     ==> comments
  <br/>  -> for new line
+ <title> -> for specifying the page title
+ tomcat web server :----> running/deploying the web aplications
+ 
+ sample app url:
+ 	http://localhost:8081/myapp/ex1.html
+  http: -> protocol
+  localhost : ip address where the application  is running [ system identification ]
+  8081 : port number where the tomact is running [ service in the system ]
+  myapp : applciation name
+  
+  base url: http://localhost:8081/myapp
+  
+  resource url:
+  http://localhost:8081/myapp/hi.html
+  http://localhost:8081/myapp/bye.html
+  http://localhost:8081/myapp/ex1.html
+  
+  for every feature there will be seperate resoirce url
+  
  &nbsp;   -> for space
  <!--  
               Comments 
   --> 
-  <h1> <h2> <h3> <h4> <h5> -> header tags that displays content in diff font
+  <h1> <h2> <h3> <h4> <h5> -> for single line header tags that displays content in diff font
   <hr/>  -> horizonal line
-  <ul> , <ol < <li> -> to show the ordered and unordered list
+  <ul> , <ol> <li> -> to show the ordered and unordered list
   <b>, <i> , <strong> , <em>  --> font style
   style attribute specifies --->font color , text alignment , font family
-  <p>    -> paragraphs 
+  <p>    -> paragraphs , for multiple lines 
   <style>   -> tag in html specifies the style for the elements inside the body
   <img> + src -> for displaying the image
   <a href> ----------> for displaying the link(internal/external)
