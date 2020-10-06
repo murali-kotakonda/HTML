@@ -33,11 +33,36 @@
   <img> + src -> for displaying the image
   <a href> ----------> for displaying the link(internal/external)
   <table> ,<tr> ,<td> ----> to show the table info
+  
   for A button the url is specified using the form tag 
   ex:
   <form action="https://www.google.com" method="get">
   <form>
   
+  
+  for a link url is specified using the <a href> tag 
+  
+  
+  Url after submitting the form:
+  https://www.google.com/?uName=sravs&uName=kumar&LName=murali&password=sravs
+  here: https://www.google.com is the url
+  wat ever that comes after ? is the data submitted to the to the url
+  
+  
+  
+  Url after submitting the form:
+  https://www.google.com/?uName=sravs&uName=kumar&LName=murali&password=sravs
+  here: https://www.google.com is the url
+  wat ever that comes after ? is the data submitted to the to the url
+  uName=sravs&uName=kumar&LName=murali&password=sravs ====> query params
+  uName , Lname ,Lanme , password are field names/query param names
+  sravs , kumar , murali , sravs ==? fileld values or query values.
+  
+  <form method="get"> ==> then data submitted is visible in url
+  <form method="post"> ==> then data submitted is not visible in url
+  
+  
+    ex:
   
   <input type="submit">     ==> to show button
   <input type="text" >      ===> to show text box
