@@ -42,14 +42,7 @@
   
   for a link url is specified using the <a href> tag 
   
-  
-  Url after submitting the form:
-  https://www.google.com/?uName=sravs&uName=kumar&LName=murali&password=sravs
-  here: https://www.google.com is the url
-  wat ever that comes after ? is the data submitted to the to the url
-  
-  
-  
+  <form method="get"> ==> then data submitted is visible in url
   Url after submitting the form:
   https://www.google.com/?uName=sravs&uName=kumar&LName=murali&password=sravs
   here: https://www.google.com is the url
@@ -58,7 +51,7 @@
   uName , Lname ,Lanme , password are field names/query param names
   sravs , kumar , murali , sravs ==? fileld values or query values.
   
-  <form method="get"> ==> then data submitted is visible in url
+  
   <form method="post"> ==> then data submitted is not visible in url
   
   
