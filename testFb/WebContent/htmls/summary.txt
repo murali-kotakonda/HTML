@@ -17,7 +17,7 @@
   http://localhost:8081/myapp/bye.html
   http://localhost:8081/myapp/ex1.html
   
-  for every feature there will be seperate resoirce url
+  for every feature there will be seperate resource url
   
  &nbsp;   -> for space
  <!--  
@@ -27,14 +27,15 @@
   <hr/>  -> horizonal line
   <ul> , <ol> <li> -> to show the ordered and unordered list
   <b>, <i> , <strong> , <em>  --> font style
-  style attribute specifies --->font color , text alignment , font family
   <p>    -> paragraphs , for multiple lines 
-  <style>   -> tag in html specifies the style for the elements inside the body
+  style attribute specifies --->font color , text alignment , font family
+   <style>   -> tag in html specifies the style for the elements inside the body
+  style attribute can be used for all header tags and <p> tag
   <img> + src -> for displaying the image
   <a href> ----------> for displaying the link(internal/external)
-  <table> ,<tr> ,<td> ----> to show the table info
+  <table> ,<tr> ,<th>, <td> ----> to show the table info
   
-  for A button the url is specified using the form tag 
+  for A button the url is specified using the form tag action attribute: 
   ex:
   <form action="https://www.google.com" method="get">
   <form>
@@ -44,11 +45,11 @@
   
   <form method="get"> ==> then data submitted is visible in url
   Url after submitting the form:
-  https://www.google.com/?uName=sravs&uName=kumar&LName=murali&password=sravs
+  https://www.google.com/?uName=sravs&sName=kumar&LName=murali&password=sravs
   here: https://www.google.com is the url
   wat ever that comes after ? is the data submitted to the to the url
-  uName=sravs&uName=kumar&LName=murali&password=sravs ====> query params
-  uName , Lname ,Lanme , password are field names/query param names
+  uName=sravs&sName=kumar&LName=murali&password=sravs ====> query params
+  uName , LName ,sName , password are field names/query param names
   sravs , kumar , murali , sravs ==? fileld values or query values.
   
   
@@ -59,6 +60,9 @@
   
   <input type="submit">     ==> to show button
   <input type="text" >      ===> to show text box
+  <input type="text"   readonly="readonly" > ====> text box readonly
+  <input type="text" disabled="disabled" />  ====> text box disabled
+  
   <input type = "password">  ===> to show password
   <input type="radio">  ===> to show radio button
   <input type="checkbox"> ===> to show checkbox
