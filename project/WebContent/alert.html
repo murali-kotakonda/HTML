@@ -1,64 +1,35 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Home Page</title>
+
 <script>
-function check(){
+function check1(){
 	alert("Hello");
 	return true;
 }
-function check1(){
-	if(confirm("do you want to continue")){
-		window.location="https://google.com"
+
+function check2(){
+	if(confirm("do you want to continue?")){
+		window.location="https://www.google.com"
 	}else{
-		window.location="https://gmail.com"
+		window.location="https://www.gmail.com"
 	}
 }
-function check2(){
+
+function check3(){
 	txt = prompt("enter page")
 	if(txt !="" && txt != null)
 		window.location=txt
 }
 </script>
+
 </head>
 <body>
-<form action="https://google.com">
-<label id="lname" >Name :</label>
-<input type="text"  name="username" value="testUser"><br><br>
-<label id="lpswd" >Password :</label>
-<input type="password" name="password"><br><br>
-<label id="lgender" >Gender :</label>
-    	<input type="radio" id="genderm" name="Gender" checked="checked">Male
-        <input type="radio" id="genderf" name="Gender">Female
-        <input type="radio" id="gendero" name="Gender">Other<br><br>
-<a href="https://www.google.co.in/">Click for googlepage</a><br><br>
-<label id="lcheck">Proofs</label>
-<input type="checkbox" name="passport">passport &nbsp;&nbsp;
-<input type="checkbox" name="voter">votercard&nbsp;&nbsp;
-<input type="checkbox" name="driving">driving licence<br><br>
-<label id="llocation" >Cities :</label>
-<select name="cities" >
-	<option value="BANG">Bangalore</option>
-	<option value="CH">Chennai</option>
-	<option value="MUM">Mumbai</option>
-	<option value="HYD">Hyderabad</option>
-</select><br><br>
+ 
+<input type="submit" name="submit" onclick="check1()" value="alert1"><br><br>
+<input type="button" name="alert1" onclick="check2()" value="alert2"><br><br>
+<input type="button" name="alert2" onclick="check3()" value="alert3"><br><br>
 
-
-<select name="cities" multiple="multiple" >
-	<option value="BANG">Bangalore</option>
-	<option value="CH">Chennai</option>
-	<option value="MUM">Mumbai</option>
-	<option value="HYD">Hyderabad</option>
-</select><br><br>
-
-<input type="submit" name="submit" onclick="check()" value="submit"><br><br>
-<input type="button" name="alert1" onclick="check1()" value="alert1">
-
-<input type="button" name="alert2" 
-onclick="check2()"
-value="alert2">
-</form>
 </body>
 </html>
