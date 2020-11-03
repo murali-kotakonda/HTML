@@ -9,62 +9,108 @@
         
         CSS Selectors
         ~~~~~~~~~~~~~~~
+        1.Get all web elements that has input as tag name
         $$("input")
+        
         (10) [input#first-name, input#password, input, input, input, input, input, input, input, input]0: input#first-name1: input#password2: input3: input4: input5: input6: input7: input8: input9: inputlength: 10__proto__: Array(0)
+        
+        2.Get all web elements that has input as tag name and type as password
         $$("input[type='password']")
         [input#password]0: input#passwordlength: 1__proto__: Array(0)
+        
+        3.Get all web elements that has input as tag name and type as text
         $$("input[type='text']")
         [input#first-name]0: input#first-namelength: 1__proto__: Array(0)
+        
+        4.Get all web elements that has input as tag name and type as number
         $$("input[type='number']")
         [input]
+        
+        5.Get all web elements that has input as tag name and type as radio
         $$("input[type='radio']")
         (4) [input, input, input, input]0: input1: input2: input3: inputlength: 4__proto__: Array(0)
-        $$("input[value='HTML']")
-        [input]0: inputlength: 1__proto__: Array(0)
+        
+        6.Get all the labels
         $$("label")
         (8) [label, label, label#update-profile-label, label, label, label, label, label]
+        
+       
+       7.Get all li tags
         $$("li")
         (5) [li, li, li, li, li]
+        
+        8.Get all the dropdowns
         $$("select")
         [select]
+        
+        9.Get the options
         $$("option")
         (4) [option, option, option, option]0: 
+        
+        10.get the input type checkbox
         $$("input[type='checkbox']")
         [input]
+     
+     	$$("input[value='HTML']")
+        [input]0: inputlength: 1__proto__: Array(0)
+       
+       
         XPath Selectors
         ~~~~~~~~~~~~~~~
-        $x("//input")
+       
+		1.Get all web elements that has input as tag name
+ 		$x("//input")
         (10) [input#first-name, input#password, input, input, input, input, input, input, input, input]
+        
+        
+		2.Get all web elements that has input as tag name and type as text
         $x("//input[@type='text']")
         [input#first-name]
+        
+        3.Get all web elements that has input as tag name and type as checkbox
         $x("//input[@type='checkbox']")
         [input]
+        
+        4.Get all passwords
         $x("//input[@type='password']")
         [input#password]
+        
+        5.Get input field that has id as password  
         $x("//input[@id='password']")
         [input#password]
+        
+        
+        6.Get input field that has id as first-name  
         $x("//input[@id='first-name']")
         [input#first-name]
+        
+        7.Get all the labels
         $x("//label")
         (8) [label, label, label#update-profile-label, label, label, label, label, label]
+       
+        8.Get all the textarea
         $x("//textarea")
         [textarea]
-        $x("//input[type='number']")
-        []
-        $x("//input[@type='number']")
-        [input]0: inputlength: 1__proto__: Array(0)
+       
+        9.Get the input that has type as number
+          $x("//input[type='number']")
+          []
+       
+       10.Get the input that has type as radio
         $x("//input[@type='radio']")
         (4) [input, input, input, input]
+       
+       11.Get all te dropdowns
         $x("//select")
         [select]
+      
+      12.Get the options in a drop down
         $x("//option")
         (4) [option, option, option, option]
+       
+       13.get all elements that has id as firstname
         $x("//*[@id='first-name']")
         [input#first-name]
-        $$("#first-name")
-        [input#first-name]
-        $x("//input[@type='radio']")
-        (4) [input, input, input, input]
         -->
         
     </head>

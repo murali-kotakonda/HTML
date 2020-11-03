@@ -42,21 +42,29 @@
         <!-- 
         CSS Selectors
         ~~~~~~~~~~~~~
+        1.Get the h1 tags
+        $$("h1")
+        
+        2.Get the p tags
         $$("p")
         (10) [p, p.first-paragraph.important-thing, p.second-paragraph, p#html-important-point, p#important-point-outside-div, p, p.first-paragraph, p.second-paragraph, p.first-paragraph, p.second-paragraph]
         
+        3.get all p elements inside the div tags
         $$("div p")
         (8) [p.first-paragraph.important-thing, p.second-paragraph, p#html-important-point, p, p.first-paragraph, p.second-paragraph, p.first-paragraph, p.second-paragraph]
         
+        4.Get all the elements that has '.first-paragraph' as class attribute.
         $$(".first-paragraph")
         (3) [p.first-paragraph.important-thing, p.first-paragraph, p.first-paragraph]
         
+        5.Get all the elements that has '.second-paragraph' as class attribute.
         $$(".second-paragraph")
         (4) [h1.second-paragraph, p.second-paragraph, p.second-paragraph, p.second-paragraph]
         
         $$("p .second-paragraph")
         []
         
+        6.Get the <p> elements that has '.first-paragraph' as class attribute.
         $$("p.second-paragraph")
         (3) [p.second-paragraph, p.second-paragraph, p.second-paragraph]
         
@@ -66,38 +74,61 @@
         $$("h1")
         [h1.second-paragraph]0: h1.second-paragraphlength: 1__proto__: Array(0)
         
+        7.Get element that has html-important-point as id
         $$("#html-important-point")
         [p#html-important-point]
+        
+        . ==> search for class
+  		# ==> serach for id
+  
         XPATH Selectors
         ~~~~~~~~~~~~~~~
         $$("p")
         (10) [p, p.first-paragraph.important-thing, p.second-paragraph, p#html-important-point, p#important-point-outside-div, p, p.first-paragraph, p.second-paragraph, p.first-paragraph, p.second-paragraph]
         $$("h1")
         [h1.second-paragraph]
-        $x("h1")
+       
+        1.Get the h1 tags
+        $x("//h1")
         []
+        OR  
         $x("/html/body/h1")
         [h1.second-paragraph]
-        $x("//h1")
-        [h1.second-paragraph]
+       
+        2.Get all para tags
         $x("//p")
         (10) [p, p.first-paragraph.important-thing, p.second-paragraph, p#html-important-point, p#important-point-outside-div, p, p.first-paragraph, p.second-paragraph, p.first-paragraph, p.second-paragraph]
+       
+        3.Get all H2 tags
         $x("//h2")
         (3) [h2, h2, h2]
+       
+        4.Get the 2nd H2 tag
         $x("//h2[1]")
         [h2]
+       
+        5.Get the 3rd H2 tag
         $x("//h2[2]")
         [h2]
+       
+        6.Get the last H2 tag
         $x("//h2[last()]")
         [h2]
-        $x("//p")
-        (10) [p, p.first-paragraph.important-thing, p.second-paragraph, p#html-important-point, p#important-point-outside-div, p, p.first-paragraph, p.second-paragraph, p.first-paragraph, p.second-paragraph]
+       
+        7.Get the p tag that id as 'html-important-point'
         $x("//p[@id='html-important-point']")
         [p#html-important-point]0: p#html-important-pointlength: 1__proto__: Array(0)
+
+        OR
+        
         $$("#html-important-point")
         [p#html-important-point]
+
+        
+        8.Get the p tag that has  'first-paragraph'as class
         $x("//p[@class='first-paragraph']")
         (2) [p.first-paragraph, p.first-paragraph]
+         
         $$(".first-paragraph")
         (3) [p.first-paragraph.important-thing, p.first-paragraph, p.first-paragraph]
         body
@@ -105,6 +136,19 @@
         /html/body/h1 //h1
         body > h1
         body > p:nth-child(2)
+        
+        
+        
+        
+        <div><p class="dataflowkit">Some text in Paragraph</p></div>
+			p.dataflowkit      [css]
+			//p[@class='dataflowkit']   [xpath]
+			
+		<div><p class="dataflowkit expandable">Some text in Paragraph</p></div>
+			p.dataflowkit.expandable      [css]
+			//p[@class='dataflowkit expandable']   [xpath]
+			        
+        
         -->
     </head>
     
