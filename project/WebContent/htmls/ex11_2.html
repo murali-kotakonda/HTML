@@ -3,12 +3,43 @@
         
         <title>Learn Forms in HTML with CSS</title>
         
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+     <!--   <link rel="stylesheet" type="text/css" href="style.css"/> -->
+     
+
+<style type="text/css">
+label {
+    font-size: 16px;
+    color: #111111;
+}
+
+input, textarea, select {
+    background-color: antiquewhite;
+}
+
+fieldset {
+    border: 0px;
+    padding: 20px;
+    background-color: #EEFFFF;
+}
+
+ul {
+    background-color: #EEFFEE;
+}
+
+li {
+    color: #666666;
+}
+
+</style>     
 
         <!--
         
         CSS Selectors
         ~~~~~~~~~~~~~~~
+        $$("<tag name>")
+		$$("<tagName>[<attributeName>='<value>']")
+
+        
         1.Get all web elements that has input as tag name
         $$("input")
         
@@ -96,11 +127,11 @@
           $x("//input[type='number']")
           []
        
-       10.Get the input that has type as radio
+       10.Get the input that has type as radio or get all radio buttons
         $x("//input[@type='radio']")
         (4) [input, input, input, input]
        
-       11.Get all te dropdowns
+       11.Get all the dropdowns
         $x("//select")
         [select]
       
