@@ -23,9 +23,11 @@
  <!--  
               Comments 
   --> 
-  <h1> <h2> <h3> <h4> <h5> -> for single line header tags that displays Header content in diff font
+ <h1> <h2> <h3> <h4> <h5> -> for single line header tags  that displays Header content in diff font
   <hr/>  -> horizonal line
   <ul> , <ol> <li> -> to show the ordered and unordered list
+    <b> - to show text in bold
+    <i> - to show the text in italics.
   <b>, <i> , <strong> , <em>  --> font style
   <p>    -> paragraphs , for multiple lines 
   style attribute specifies --->font color , text alignment , font family
@@ -36,8 +38,6 @@
 and mention the url using the href attribute
 
   <table> ,<tr> ,<th>, <td> ----> to show the table info
-  
-  
   
   for a link url is specified using the <a href> tag 
     
