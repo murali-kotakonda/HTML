@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="C:\Users\ADMIN\Desktop\UITask1\style.css">
+<script src="C:\Users\ADMIN\Desktop\UITask1\form.js"></script>
+</head>
+
+<body>
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Sri Ram Contact Form</h3>
+    <!--<h4>Contact us for custom quote</h4>-->
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number " type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset><h4><b>Correspondence Address</b></h4></fieldset>
+    <fieldset>
+       <select name="country" id="countrySelect" aria-placeholder="select country">
+        <option  value="">-------------------select Country---------------</option>
+        <option  value="IN">India</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <select id="myState" onclick="changeCityList()">
+        <option value="default">---------------------Select State------------------</option>
+        <option value="AP">AndhraPradesh</option>
+        <option value="AR">ArunachalPradesh</option>
+        <option value="AS">Assam</option>
+        <option value="BI">Bihar</option>
+        <option value="CH">Chattisghad</option>
+        <option value="DL">Delhi</option>
+        <option value="GO">Goa</option>
+        <option value="GU">Gujarat</option>
+        <option value="HA">Haryana</option>
+        <option value="HI">Himachal Pradesh</option>
+        <option value="JH">Jharkhand</option>
+        <option value="JK">Jammu&Kashmir</option>
+        <option value="KA">Karnataka</option>
+        <option value="KE">Kerala</option>
+        <option value="MP">Madhya Pradesh</option>
+        <option value="MH">Maharashtra</option>
+        <option value="MN">Manipur</option>
+        <option value="MG">Meghalaya</option>
+        <option value="MZ">Mizoram</option>
+        <option value="NL">Nagaland</option>
+        <option value="OD">Odisha</option>
+        <option value="PN">Punjab</option>
+        <option value="RJ">Rajasthan</option>
+        <option value="SK">Sikkim</option>
+        <option value="TM">Tamil Nadu</option>
+        <option value="TN">Telangana</option>
+        <option value="TR">Tripura</option>
+        <option value="UK">Uttarakhand</option>
+        <option value="UP">Uttar Pradesh</option>
+        <option value="WB">West Bengal</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <select id="cities">
+        <option value="">-------Select City-----</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <input type="text"  name="cvillage" placeholder="Your Village" >
+    </fieldset>
+    <fieldset>
+      <input type="number"  name="cpin" placeholder="PIN number" >
+    </fieldset>
+    <fieldset><h4><b>Permanent Address</b></h4></fieldset>
+    <fieldset>
+      <label>Is your permanent address same as correspondance  address?</label>
+      <input type="checkbox" id = "button"  value="Copy Address" onchange="copyAddress(this.form)"
+                unchecked/>
+    </fieldset>
+    <fieldset>
+      <select name="country1" id="countrySelect1">
+        <option  value="">-----select Country------</option>
+        <option  value="IN">India</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <select id="myState1" onchange="changeCityList1()">
+        <option value="default">-------Select State------</option>
+        <option value="AP">AndhraPradesh</option>
+        <option value="AR">ArunachalPradesh</option>
+        <option value="AS">Assam</option>
+        <option value="BI">Bihar</option>
+        <option value="CH">Chattisghad</option>
+        <option value="DL">Delhi</option>
+        <option value="GO">Goa</option>
+        <option value="GU">Gujarat</option>
+        <option value="HA">Haryana</option>
+        <option value="HI">Himachal Pradesh</option>
+        <option value="JH">Jharkhand</option>
+        <option value="JK">Jammu&Kashmir</option>
+        <option value="KA">Karnataka</option>
+        <option value="KE">Kerala</option>
+        <option value="MP">Madhya Pradesh</option>
+        <option value="MH">Maharashtra</option>
+        <option value="MN">Manipur</option>
+        <option value="MG">Meghalaya</option>
+        <option value="MZ">Mizoram</option>
+        <option value="NL">Nagaland</option>
+        <option value="OD">Odisha</option>
+        <option value="PN">Punjab</option>
+        <option value="RJ">Rajasthan</option>
+        <option value="SK">Sikkim</option>
+        <option value="TM">Tamil Nadu</option>
+        <option value="TN">Telangana</option>
+        <option value="TR">Tripura</option>
+        <option value="UK">Uttarakhand</option>
+        <option value="UP">Uttar Pradesh</option>
+        <option value="WB">West Bengal</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <select id="cities1">
+        <option value="">-------Select City-----</option>
+      </select> 
+    </fieldset>
+    <fieldset>
+      <input type="text"  name="pvillage" id="village" placeholder="Your Village">
+    </fieldset>
+    <fieldset>
+      <input type="number"  name="ppin" id="pin" placeholder="PIN Number" >
+    </fieldset>
+
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    <p class="copyright">Designed by Sri SriRam</p>
+  </form>
+</div>
+</body>
+</html>

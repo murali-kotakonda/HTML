@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="C:\Users\ADMIN\Desktop\UITask3-1\main.css">
+<script src="C:\Users\ADMIN\Desktop\UITask3-1\main.js"></script>
+</head>
+
+<body>
+<div class="container">  
+  <form name="myForm" id="contact" action=""   method="post" >
+    <h3 id="title">Application  Form</h3>
+    <!--<h4>Contact us for custom quote</h4>-->
+    <br><br>
+    <fieldset>
+      <label for="First name">First Name</label>
+      <input name="fname" placeholder="First name" type="text" id="fname"  tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <label for="Last name">Last Name</label>
+      <input placeholder="Last name" type="text" id="lname" tabindex="2" required autofocus>
+    </fieldset>
+    <fieldset>
+      <label for="age">Your Age</label>
+      <input placeholder="Your Age" type="text" id="age" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <label for="email">Email Id</label>
+      <input placeholder="Your Email Address" type="text" id="email" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <label for="password">Enter Password</label>
+      <input type="password" placeholder="Password" id="password" required>
+      <span id="error-password"></span>
+    </fieldset>
+    <fieldset>
+      <label for="password">Confirm Password</label>
+      <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+      <span id="error-cpassword"></span>
+    </fieldset>
+    <fieldset>
+        <button name="submit" type="submit" id="contact-submit" onclick="validateForm()">Submit</button>
+      </fieldset>
+      <p class="copyright">Designed by Sri SriRam</p>
+    </form>
+  </div>
+  </body>
+  </html>
