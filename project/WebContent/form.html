@@ -18,38 +18,45 @@ Post -> then form data is not visible in the url
 	<!--  <form action="ex1.html" method="get">  -->
 	<!--  <form action="ex1.html" method="post">  -->
 	
-		Enter FirstName1 : <input type="text" id="myname" name="uName" /> <br>
+	Enter FirstName1 : <input type="text" id="myname" name="uName" /> <br><br>
+	
+	Enter Middle Name :  <input type="text" name="uName1" readonly="readonly" value="kumar" /> <br><br>
+	
+	Enter Surname :<input type="text" name="uName2" disabled="disabled" /><br><br>
+	
+	Enter LastName : <input type="text" name="LName" size="30" width="30" /><br><br>
+	
+	Password: <input type="password" name="password" /><br><br>
+	
+	<input type="hidden" name="uType" value="agent" /><br>
+
 		
-		Enter Middle Name : <input type="text" name="uName1" readonly="readonly" value="kumar" />
-	   
-	    <br> Enter Surname :<input type="text" name="uName2" disabled="disabled" /><br>
+		Gender: <br>
+      <input type="radio" name="gender" id="mRadio" value="male" checked> Male<br> 
+      <input type="radio" name="gender" id="fRadio" value="female"> Female <br> 
+      <input type="radio" name="gender" id="oRadio" value="other"> Other 
+      
+      <br><br>
+      
+      Proofs: <br>
+      <input type="checkbox" name="proof1" value="passport">Passport
+      <input 	type="checkbox" name="proof2" value="voter">Voter
+      <input type="checkbox" name="proof3" value="pan" checked>Pan Card
+
 		
-		<br> Enter LastName : <input type="text" name="LName" size="30" width="30" /><br>
-		
-		<br>  Password: <input type="password" name="password" />
-		
-		<input type="hidden" name="uType" value="agent" /><br>
-		
-		<br> Gender: <br>
-		<input type="radio" name="gender" id="mRadio" value="male" checked> Male<br> 
-			<input type="radio" name="gender" id="fRadio" value="female"> Female <br> 
-			<input type="radio" name="gender" id="oRadio" value="other"> Other <br>
-		
-		<br> Proofs: <br>
-		<input type="checkbox" name="proof1" value="passport">passport &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		<input 	type="checkbox" name="proof2" value="voter">voter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		<input type="checkbox" name="proof3" value="pan" checked> pan
-		
-		<br> 
+		<br><br>
 		Select City
 		<select name="city">
 			<option value="hyd">Hyderabad</option>
 			<option value="bang" selected="selected">Bangalore</option>
 			<option value="chen">Chennai</option>
 			<option value="mum">Mumbai</option>
-		</select> <br />
+		</select>  
 		
-		<br> Citizenship: <select name="citizen" multiple>
+		<br><br>
+
+		 Citizenship: 
+		 <select name="citizen" multiple>
 			<option value="IN">India</option>
 			<option value="PAK">Pakistan</option>
 			<option value="US">America</option>
