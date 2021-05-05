@@ -96,6 +96,16 @@
   
   
   
+post form:
+---------------
+
+<form action="https://www.google.com" method="post">
+
+</form>
+
+==> then data submitted is not visible in url
+=> file uploads , large form , sensitive data  ca n be handlked using the post form
+
   
   
   
