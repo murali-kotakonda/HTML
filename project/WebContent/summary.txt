@@ -26,13 +26,15 @@
  <h1> <h2> <h3> <h4> <h5> -> for single line header tags  that displays Header content in diff font
   <hr/>  -> horizonal line
   <ul> , <ol> <li> -> to show the ordered and unordered list
+    <b>, <i> , <strong> , <em>  --> font style
     <b> - to show text in bold
     <i> - to show the text in italics.
-  <b>, <i> , <strong> , <em>  --> font style
+
   <p>    -> paragraphs , for multiple lines 
   style attribute specifies --->font color , text alignment , font family
-   <style>   -> tag in html specifies the style for the elements inside the body
+  style   -> attribute in html specifies the style for the elements inside the body
   style attribute can be used for all header tags and <p> tag
+  
   <img> + src -> for displaying the image
   
   <a href> ----------> for displaying the link(internal/external)
