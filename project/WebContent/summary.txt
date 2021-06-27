@@ -50,14 +50,17 @@
   <form>
   
    
-  
+    <input type = "hidden">  ===>not visible to customer but submitted to backend
+    <input type="hidden> ===> data submitted to backend but not visible in the html response.
+
+
   <input type="text" >      ===> to show text box
   <input type="text"   readonly="readonly" > ====> text box readonly
   <input type="text" disabled="disabled" />  ====> text box disabled
   
   <input type = "password">  ===> to show password
-   <input type = "hidden">  ===>not visible to customer but submitted to backend
-    <input type="hidden> ===> data submitted to backend but not visible in the html response.
+ 
+ 
     
   <input type="radio">  ===> to show radio button
   <input type="checkbox"> ===> to show checkbox
