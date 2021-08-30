@@ -73,8 +73,7 @@
   
   
   
-
-  Get Vs Post
+Get Vs Post
 ----------------
   <form method="get"> ==> then data submitted is visible in url
   
