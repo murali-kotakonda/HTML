@@ -60,10 +60,16 @@
   <table> ,<tr> ,<th>, <td> ----> to show the table info
    
   
+   
+  
   for A button the url is specified using the form tag action attribute: 
   ex:
   <form action="https://www.google.com" method="get">
-  <form>
+  
+  
+  <input type="submit" name="submit" value="submit" />
+  </form>
+  
   
    
     <input type = "hidden">  ===>not visible to customer but submitted to backend
