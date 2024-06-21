@@ -38,6 +38,14 @@
     red= attribute value
     This is some text1!  = Text
 
+
+  
+  <a href="https://www.google.com">Click here for google</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  a = anchor tag
+  href = attrubute , mention the url
+  Click here for google = link text
+
+
   <p>    -> paragraphs , for multiple lines 
   style attribute specifies --->font color , text alignment , font family
   style   -> attribute in html specifies the style for the elements inside the body
