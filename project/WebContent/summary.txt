@@ -135,3 +135,7 @@ post form:
   
   
   
+  
+  <body>    -> has presentation logic using tags
+  <style> ---> only styling, css 
+  <script> ->  java script code , client side validations 
