@@ -139,3 +139,24 @@ post form:
   <body>    -> has presentation logic using tags
   <style> ---> only styling, css 
   <script> ->  java script code , client side validations 
+
+
+
+ <!-- Comment 
+        
+        table
+            thead
+                tr
+                    td
+                    td
+            tbody
+                tr
+                    td
+                    td
+                tr
+                    td
+                    td
+        
+         <table> ,<tr> ,<th>, <td>   to show the table info       
+         
+        -->
