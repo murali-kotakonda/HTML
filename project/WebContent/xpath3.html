@@ -103,13 +103,26 @@
         $x("//h2")
         (3) [h2, h2, h2]
        
-        4.Get the 2nd H2 tag
+        4.
+	    
+	Get the 1st H2 tag  
+        $x("//h2[0]")
+   
+        Get the 2nd H2 tag  
+        $x("//h2[1]")
+   
+        Get the 3rd H2 tag  
+        $x("//h2[2]")    
+	
+	Get the 2nd H2 tag
         $x("//h2[1]")
         [h2]
        
         5.Get the 3rd H2 tag
         $x("//h2[2]")
         [h2]
+
+	    
        
         6.Get the last H2 tag
         $x("//h2[last()]")
