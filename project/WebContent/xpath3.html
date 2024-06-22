@@ -123,7 +123,6 @@
         [h2]
 
 	    
-       
         6.Get the last H2 tag
         $x("//h2[last()]")
         [h2]
@@ -136,10 +135,15 @@
         
         $$("#html-important-point")
         [p#html-important-point]
-
+	    
+        xpath: $x("//p[@id='html-important-point']")
+  	css selector: 
+ 	   $$("p[id='html-important-point']")
+  	   OR
+  	   $$("#html-important-point")
         
         8.Get the p tag that has  'first-paragraph'as class
-        $x("//p[@class='first-paragraph']")
+	$x("//p[@class='first-paragraph']")
         (2) [p.first-paragraph, p.first-paragraph]
          
         $$(".first-paragraph")
